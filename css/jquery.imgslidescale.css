@@ -1,0 +1,32 @@
+/*
+* File: jquery.imgslidescale.css
+* Author: William Barry (http://williambarry.net)
+*/
+
+#iss_container { text-align: center; }
+#iss_upload_form { padding: 0; margin: 0 auto 10px auto; position: relative; width: 140px; height: 24px; }
+#iss_draggable_container { width: 150px; height: 150px; border: #000 1px solid; overflow: hidden; margin: 0 auto 10px auto; position: relative; }
+#iss_draggable {}
+#iss_slider_container { width: 150px; margin: 0 auto 10px auto; }
+#iss_upload_iframe { width: 0; height: 0; border: 0; }
+#iss_upload_file {}
+#iss_upload_btn { position: absolute; top: 2px; left: 84px; }
+
+/*******************************************************************************
+Message boxes
+*******************************************************************************/
+
+.iss_loading { background: url(loading.gif) 8px center no-repeat; padding: 6px 6px 6px 34px; border: #ccc 1px solid; text-align: left; }
+.iss_note { padding: 20px; background: #fef49c; color: #000000; font-weight: bold; }
+.iss_error { background: #9c171b; color: #fff; }
+.iss_error a { color: #fff; }
+.iss_error a:hover { color: #000; }
+
+/*******************************************************************************
+For the file input
+*******************************************************************************/
+
+.iss_file_wrapper2 { position: absolute; top: 0; left: 0; }
+.iss_file_wrapper { cursor: pointer; display: inline-block; overflow: hidden; position: relative; width: 79px; height: 22px; }
+.iss_file_wrapper input { cursor: pointer; font-size: 100px; height: 100%; filter: alpha(opacity=1); -moz-opacity: 0.01; opacity: 0.01; position: absolute; right: 0; top: 0; width: 79px; height: 22px; }
+.iss_file_wrapper .iss_button { background: url(btn-choose-file.gif) top left no-repeat; cursor: pointer; display: inline-block; margin-right: 5px; width: 79px; height: 22px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
