@@ -11,6 +11,13 @@
 #iss_upload_iframe { width: 0; height: 0; border: 0; }
 #iss_upload_file {}
 #iss_upload_btn { position: absolute; top: 2px; left: 84px; }
+#iss_upload_loading {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background: url(loading.gif) center center no-repeat #ccc;; 
+}
 
 /*******************************************************************************
 Message boxes

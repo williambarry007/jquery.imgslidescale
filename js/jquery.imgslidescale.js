@@ -203,12 +203,19 @@ $.imgslidescale = {
 /******************************************************************************/
 
 	upload: function() {
-		$('#message').html("<p class='iss_loading'>Uploading picture...</p");
+		var div = $('<div/>')
+			.attr('id', 'iss_upload_loading')
+			.css({
+				width: $.imgslidescale.width,
+				height: $.imgslidescale.height
+			});
+		$('#iss_draggable').append(div);
 	},
 	
 /******************************************************************************/
 
 	uploadHandler: function(resp) {
+		$('#iss_upload_loading').remove();
 		if (resp.error)
 			$('#iss_message').html("<p class='iss_note iss_error'>"+resp.error+"</p>");
 		else
